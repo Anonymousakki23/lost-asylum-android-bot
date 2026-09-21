@@ -41,16 +41,16 @@ object StatsTracker {
     }
 
     suspend fun recordRun() = mutex.withLock {
-        prefs.edit { putInt(KEY_TOTAL_RUNS, (getInt(KEY_TOTAL_RUNS, 0) + 1)) }
+        prefs.edit { putInt(KEY_TOTAL_RUNS, (prefs.getInt(KEY_TOTAL_RUNS, 0) + 1)) }
     }
 
     suspend fun recordAction(count: Int = 1) = mutex.withLock {
         totalActionsThisSession += count
-        prefs.edit { putInt(KEY_TOTAL_ACTIONS, (getInt(KEY_TOTAL_ACTIONS, 0) + count)) }
+        prefs.edit { putInt(KEY_TOTAL_ACTIONS, (prefs.getInt(KEY_TOTAL_ACTIONS, 0) + count)) }
     }
 
     suspend fun recordError() = mutex.withLock {
-        prefs.edit { putInt(KEY_TOTAL_ERRORS, (getInt(KEY_TOTAL_ERRORS, 0) + 1)) }
+        prefs.edit { putInt(KEY_TOTAL_ERRORS, (prefs.getInt(KEY_TOTAL_ERRORS, 0) + 1)) }
     }
 
     suspend fun startSession() {

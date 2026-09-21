@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lost Asylum Automation</string>
+    <string name="accessibility_service_label">Last Asylum Automation</string>
+    <string name="menu_start">Start Automation</string>
+    <string name="menu_stop">Stop Automation</string>
+    <string name="config_module">Module</string>
+    <string name="config_pacing">Pacing (ms)</string>
+    <string name="config_save">Save</string>
+    <string name="config_cancel">Cancel</string>
+    <string name="daily_quests">Daily Quests</string>
+    <string name="auto_scavenge">Auto Scavenge</string>
+    <string name="resource_farm">Resource Farm</string>
+    <string name="cure_healing">Cure &amp; Healing</string>
+    <string name="recon">Recon &amp; Intel</string>
+    <string name="raids_rallies">Raids &amp; Rallies</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="confidence">Confidence Threshold</string>
+    <string name="ocr_accuracy">OCR Accuracy</string>
+</resources>
